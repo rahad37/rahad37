@@ -51,7 +51,7 @@ app.post('/addOrder', (req, res)=>{
 
 app.get('/allOrder', (req, res) =>{
   // console.log(req.query.email);
-  ordersCollection.find({email: req.query.email})
+  ordersCollection.find({})
   .toArray((err, documents)=>{
     res.send(documents);
   })
