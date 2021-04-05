@@ -7,7 +7,7 @@ require('dotenv').config()
 const app = express()
 const port = process.env.PORT || 5001;
 
-app.get('/products', (req, res)=>{
+app.get('/', (req, res)=>{
   res.send('Hello From Heroku, It is working perfectly Boss...')
 })
 app.use(cors());
